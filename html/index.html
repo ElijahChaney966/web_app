@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+       p {
+            color: blue;
+            font-size: 18px;
+            text-align: center;
+        }   
+      .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        #unique-heading {
+            color: purple;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+      // 1. Accessing an element by its ID and changing its text content
+const heading = document.getElementById('myHeading');
+if (heading) {
+    const textButton = document.createElement('button');
+    i
+}
+
+// 2. Adding an event listener to a button to change text
+const changeButton = document.getElementById('changeTextButton');
+if (changeButton) {
+    changeButton.addEventListener('click', () => {
+        heading.textContent = 'Text Changed by Button!';
+    });
+}
+
+// 3. Adding an event listener to a button to create and append a new element
+const addButton = document.getElementById('addNewElementButton');
+const container = document.getElementById('container');
+
+if (addButton && container) {
+    addButton.addEventListener('click', () => {
+        const newParagraph = document.createElement('p'); // Create a new <p> element
+        newParagraph.textContent = 'This is a dynamically added paragraph.'; // Set its text content
+        container.appendChild(newParagraph); // Append the new paragraph to the container div
+    });
+}
+    </script>
+  
+</body>
+</html>
